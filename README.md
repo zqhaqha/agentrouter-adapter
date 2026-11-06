@@ -29,13 +29,13 @@ docker run -d \
   --name agentrouter-adapter \
   -p 8045:8045 \
   --restart unless-stopped \
-  ghcr.io/your-username/agentrouter-adapter:latest
+  ghcr.io/zqhaqha/agentrouter-adapter:latest
 ```
 
 *(如果尚未构建镜像，可通过本地克隆后构建)*：
 
 ```bash
-git clone https://github.com/your-username/agentrouter-adapter.git
+git clone https://github.com/zqhaqha/agentrouter-adapter.git
 cd agentrouter-adapter
 docker compose up -d
 ```
@@ -45,7 +45,7 @@ docker compose up -d
 需要 Python 3.9+ 环境：
 
 ```bash
-git clone https://github.com/your-username/agentrouter-adapter.git
+git clone https://github.com/zqhaqha/agentrouter-adapter.git
 cd agentrouter-adapter
 pip install -r requirements.txt
 python adapter.py
