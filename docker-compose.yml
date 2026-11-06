@@ -1,0 +1,12 @@
+services:
+  agentrouter-adapter:
+    build: .
+    container_name: agentrouter-adapter
+    restart: unless-stopped
+    ports:
+      - "8045:8045"
+    environment:
+      - PORT=8045
+      - HOST=0.0.0.0
+      # 可选：如果希望作为公共网关且客户端不带 Key，可在这里填入默认 Key
+      # - AGENTROUTER_API_KEY=sk-...
